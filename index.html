@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manga Personal — Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #000000;
+      --card: #121212;
+      --border: rgba(202, 196, 208, 0.22);
+      --text: #ece6f0;
+      --muted: #cac4d0;
+      --accent: #d0bcff;
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #fef7ff;
+        --card: #f7f2fa;
+        --border: rgba(121, 116, 126, 0.22);
+        --text: #1d1b20;
+        --muted: #49454f;
+        --accent: #6750a4;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 24px 16px 48px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px 20px;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      margin: 0 0 6px;
+      font-size: 1.5rem;
+    }
+
+    h2 {
+      margin: 0 0 8px;
+      font-size: 1.08rem;
+      color: var(--accent);
+    }
+
+    p, li {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    ul {
+      margin: 6px 0 0;
+      padding-left: 20px;
+    }
+
+    li + li {
+      margin-top: 6px;
+    }
+
+    .meta {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.88em;
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="card">
+      <h1>Manga Personal — Privacy Policy</h1>
+      <p class="meta">Developer: ReyGab &bull; Effective: November 2026 &bull; Package: <code>io.github.reygab.manga_personal</code> &bull; Contact: <a href="mailto:reygab.support@gmail.com" style="color: var(--accent);">reygab.support@gmail.com</a></p>
+    </header>
+
+    <section class="card">
+      <h2>1. Local Data Stored on Your Device</h2>
+      <ul>
+        <li>Saved web bookmarks, chapter titles, reading progress, and reading history are stored locally on your device in SQLite (Drift).</li>
+        <li>Theme, Pure-Black AMOLED preferences, reader defaults, browser safety preferences, and in-app purchase entitlements are stored locally in <code>SharedPreferences</code>.</li>
+        <li>Manga Personal does not require account registration and does not operate a remote user-data server.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>2. Built-In WebView Browser &amp; Cookies</h2>
+      <ul>
+        <li>Webpages load directly from user-entered URLs or search queries. No copyrighted or third-party comic catalogs are preloaded.</li>
+        <li>Search queries entered in the browser are sent over HTTPS directly to Google Search (<code>google.com</code>).</li>
+        <li><code>SafeSearch</code> and <code>Pop-up &amp; Redirect Guard</code> are enabled by default and configurable inside Settings and the Browser menu.</li>
+        <li>Incognito tabs do not save search queries to Recent Searches or persistent history.</li>
+        <li>You can clear browser cache, cookies, and recent searches anytime in <strong>Settings &rarr; Clear Browser Cache &amp; Cookies</strong> or the Browser menu.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>3. Advertising &amp; Consent (Google AdMob + UMP)</h2>
+      <ul>
+        <li>Adaptive banner ads appear <strong>only</strong> on the native <strong>Library</strong> and <strong>History</strong> screens.</li>
+        <li>Zero ads are ever displayed inside the built-in WebView browser or inside <strong>ReaderScreen</strong>.</li>
+        <li>Google Mobile Ads (AdMob) and Google User Messaging Platform (UMP) SDK may collect and process the Android Advertising ID (<code>AD_ID</code>) / device identifiers, approximate location derived from IP address, ad interaction and performance data, and crash/diagnostic telemetry for ad delivery, frequency capping, fraud prevention, and measurement. See Google's policy: <a href="https://policies.google.com/technologies/ads" style="color: var(--accent);">https://policies.google.com/technologies/ads</a>.</li>
+        <li>Where required (such as EEA/UK), Google UMP consent controls allow managing ad privacy preferences directly inside the app. Banner ads are hidden permanently when <code>remove_ads</code> or <code>supporter_pro</code> is purchased, or whenever ad consent is withdrawn.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>4. In-App Purchases (Google Play Billing)</h2>
+      <ul>
+        <li>Optional one-time non-consumable upgrades (<code>remove_ads</code> and <code>supporter_pro</code>) are processed securely by Google Play Billing.</li>
+        <li>Manga Personal never accesses or stores payment card or financial credentials.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>5. Your Controls &amp; Data Deletion</h2>
+      <ul>
+        <li>Clear reading history, clear browser cache &amp; cookies, or remove bookmarks anytime within the app.</li>
+        <li>Uninstalling Manga Personal permanently removes all locally stored SQLite and preference data from your device.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>6. Third-Party Search, Image Proxy, Network Metadata &amp; Contact</h2>
+      <ul>
+        <li>Search queries entered in the browser are sent over HTTPS directly to Google Search (<code>google.com</code>), and visited sites receive standard network metadata (IP address, User-Agent, Referer).</li>
+        <li>When rendering web cover thumbnails or comic pages encoded in <code>.avif</code> (or as a fallback when a direct image fails to decode on-device), Manga Personal requests a WebP-transcoded copy over HTTPS via <code>https://wsrv.nl/</code>. <code>wsrv.nl</code> receives the requested public image URL and standard HTTPS request metadata (device IP address); site cookies and <code>Referer</code> headers from your browsing session are <strong>not</strong> forwarded to <code>wsrv.nl</code>.</li>
+        <li>For privacy inquiries, data questions, or support, contact developer <strong>ReyGab</strong> at <a href="mailto:reygab.support@gmail.com" style="color: var(--accent);">reygab.support@gmail.com</a>.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
